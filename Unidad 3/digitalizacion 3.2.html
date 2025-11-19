@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Semejanzas y diferencias entre IT y OT — Versión HTML (revisada)</title>
+  <style>
+    :root{
+      --bg:#f6f8fa;
+      --paper:#ffffff;
+      --muted:#6b6b6b;
+      --accent-orange:#f3a36c;
+      --accent-yellow:#f7e9a8;
+      --accent-blue:#c6e7f7;
+      --green:#8ccf71;
+      --border:#e2e6ea;
+      font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
+    }
+    html,body{height:100%;background:var(--bg);margin:0;padding:28px}
+    .page{max-width:980px;margin:0 auto;background:var(--paper);box-shadow:0 10px 30px rgba(20,30,40,0.08);padding:24px;border-radius:8px}
+    header{display:block}
+    h1{font-size:20px;margin:4px 0 6px;color:#0f4a6b}
+    .lead{color:var(--muted);font-size:14px;margin:6px 0 18px}
+
+    /* layout */
+    .diagram{display:flex;gap:18px}
+    .left-column{width:180px}
+    .left-column .heading{background:var(--green);color:white;padding:10px 12px;border-radius:12px;font-weight:700;margin-bottom:12px;text-align:left}
+
+    .flow{flex:1;display:flex;flex-direction:column;gap:12px}
+    .row{display:flex;gap:14px;align-items:flex-start}
+    .left-box{min-width:160px;max-width:160px;padding:10px 12px;border-radius:10px;background:#fff6f0;border:1px solid var(--border);font-weight:700;color:#8a4b2a}
+    .left-box.small{background:#fffbe6}
+
+    .pair{display:flex;flex-direction:column;gap:8px;flex:1}
+    .cards{display:flex;gap:12px}
+    .card{flex:1;border-radius:8px;padding:12px;box-shadow:0 2px 0 rgba(0,0,0,0.03);}
+    .card .label{font-weight:700;margin-bottom:6px}
+    .card p{margin:0;font-size:13px;line-height:1.35}
+
+    .it{background:var(--accent-orange);color:#5a2f14}
+    .ot{background:var(--accent-yellow);color:#5a3f00}
+    .it.blue{background:var(--accent-blue);color:#053945}
+    .ot.blue{background:var(--accent-blue);color:#053945}
+
+    /* small connector arrow from left-box to cards */
+    .left-box:after{content:"";display:inline-block;margin-left:8px;vertical-align:middle}
+
+    .example{border-left:6px solid #3a98b7;background:#fbfeff;padding:14px;margin-top:18px;border-radius:6px}
+    .example h3{margin:0;font-size:14px;color:#0d5369}
+    .example ul{margin:10px 0 0;padding-left:18px}
+    .example li{margin-bottom:8px;font-size:13px}
+    .muted{color:var(--muted);font-size:13px}
+
+    @media(max-width:880px){
+      .diagram{flex-direction:column}
+      .left-column{width:auto}
+      .row{flex-direction:column}
+      .left-box{max-width:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>3.2. Semejanzas y diferencias entre IT y OT</h1>
+      <p class="lead">Los entornos <strong>IT</strong> (tecnología de la información) y <strong>OT</strong> (tecnología de la operación) son dos áreas distintas de la tecnología empresarial, que tienen objetivos y enfoques diferentes, pero que también <em>se complementan</em> para mejorar la eficiencia y el rendimiento de la organización.</p>
+    </header>
+
+    <div class="diagram">
+      <div class="left-column">
+        <div class="heading">Diferencias</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div class="left-box">1. Enfoque y objetivos</div>
+          <div class="left-box small">2. Tecnologías utilizadas</div>
+          <div class="left-box">3. Seguridad</div>
+          <div class="left-box small">4. Ciclo de vida</div>
+        </div>
+      </div>
+
+      <div class="flow">
+        <!-- row 1 -->
+        <div class="row">
+          <div class="left-box" style="visibility:hidden">placeholder</div>
+          <div class="pair">
+            <div class="cards">
+              <div class="card it">
+                <div class="label">IT</div>
+                <p>Se centra en recopilar información, crear listas de control y analizar los datos.</p>
+              </div>
+              <div class="card ot">
+                <div class="label">OT</div>
+                <p>Se enfoca en la operación y control de la fabricación, la energía y la logística.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row">
+          <div class="left-box" style="visibility:hidden">placeholder</div>
+          <div class="pair">
+            <div class="cards">
+              <div class="card it">
+                <div class="label">IT</div>
+                <p>Utiliza software, redes, bases de datos y aplicaciones informáticas.</p>
+              </div>
+              <div class="card ot">
+                <div class="label">OT</div>
+                <p>Emplea sensores, controladores industriales y sistemas de automatización.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 3 -->
+        <div class="row">
+          <div class="left-box" style="visibility:hidden">placeholder</div>
+          <div class="pair">
+            <div class="cards">
+              <div class="card it">
+                <div class="label">IT</div>
+                <p>La seguridad se centra en proteger datos y sistemas contra las amenazas cibernéticas.</p>
+              </div>
+              <div class="card ot">
+                <div class="label">OT</div>
+                <p>La seguridad se enfoca en proteger sistemas industriales contra ataques informáticos y fallos operativos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 4 -->
+        <div class="row">
+          <div class="left-box" style="visibility:hidden">placeholder</div>
+          <div class="pair">
+            <div class="cards">
+              <div class="card it blue">
+                <div class="label">IT</div>
+                <p>Tienen ciclos de vida más cortos debido a las actualizaciones tecnológicas frecuentes.</p>
+              </div>
+              <div class="card ot blue">
+                <div class="label">OT</div>
+                <p>Tienden a ciclos de vida más largos para estabilizar la producción y por el coste de los equipos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- .flow -->
+    </div> <!-- .diagram -->
+
+    <div class="example">
+      <h3>EJEMPLO</h3>
+      <p class="muted">Algunas de las herramientas de <strong>tecnología de la información (IT)</strong> que son ampliamente utilizadas por las empresas en la actualidad son:</p>
+      <ul>
+        <li><strong>Microsoft Azure.</strong> Plataforma en la nube para que las empresas puedan almacenar su información y programas sin necesidad de tener su propio hardware.</li>
+        <li><strong>Splunk.</strong> Plataforma de análisis de datos que se utiliza para buscar y monitorizar registros en tiempo real.</li>
+        <li><strong>VMware vSphere.</strong> Plataforma que permite crear máquinas virtuales en servidores físicos.</li>
+        <li class="muted">Igualmente, encontramos herramientas populares de <strong>tecnología operacional (OT)</strong> como SCADA, PLCs y Historian Software para monitorizar y registrar procesos industriales.</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
