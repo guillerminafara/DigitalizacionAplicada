@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>El Cerebro de Color</title>
+</head>
+
+<body>
+    <h2>El Cerebro de Color: ¿Blanco o Negro?</h2>
+    <input id="picker" class="jscolor" data-jscolor='{"value":"#000000"}' />
+    <p>
+        Color Actual: <span id="hex">#000000</span> — Confianza de la Red:
+        <span id="score">—</span>
+    </p>
+    <div id="sitio">¡El texto cambia de color gracias a la IA!</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"></script>
+    <script src="https://unpkg.com/brain.js"></script>
+
+    <script>
+        // Todo el código JavaScript va aquí
+
+        // A. CREAR LA RED
+        const network = new brain.NeuralNetwork();
+
+        // B. ENTRENAMIENTO MÍNIMO
+        // network.train([
+        //     // Ejemplo 1: Fondo Negro (0,0,0) -> Salida: Texto Blanco (1)
+        //     { input: { r: 0, g: 0, b: 0 }, output: { white: 1 } },
+
+        //     // Ejemplo 2: Fondo Blanco (1,1,1) -> Salida: Texto Negro (0)
+        //     { input: { r: 1, g: 1, b: 1 }, output: { white: 0 } },
+        // ]);
+
+        network.train([
+            { input: { r: 0, g: 0, b: 0 }, output: { white: 1 } },     // Negro: Blanco
+            { input: { r: 1, g: 1, b: 1 }, output: { white: 0 } },     // Blanco: Negro
+
+            // Nuevos ejemplos para colores oscuros (deben usar texto blanco)
+            { input: { r: 0.8, g: 0, b: 0 }, output: { white: 1 } },   // Rojo oscuro
+            { input: { r: 0, g: 0.4, b: 1 }, output: { white: 1 } },   // Azul saturado
+
+            // Nuevos ejemplos para colores claros o brillantes (deben usar texto negro)
+            { input: { r: 0, g: 1, b: 0 }, output: { white: 0 } },     // Verde brillante
+            { input: { r: 0.9, g: 0.9, b: 0.9 }, output: { white: 0 } }, // Gris muy claro
+        ]);
+
+        function actualizar() {
+            const pick = document.getElementById("picker").jscolor;
+            if (!pick || !pick.toHEXString) return;
+
+            const hex = pick.toHEXString();
+            document.getElementById("hex").textContent = hex;
+
+            // 1. Normalización de RGB (0-255 a 0-1)
+            const r = pick.channels.r / 255;
+            const g = pick.channels.g / 255;
+            const b = pick.channels.b / 255;
+
+            // 2. Pedir la Predicción (run)
+            const salida = network.run({ r, g, b });
+            const conf = salida.white;
+
+            document.getElementById("score").textContent = conf.toFixed(3);
+
+            // 3. Tomar la Decisión (Clasificación Binaria: si > 0.5, es blanco)
+            const textoBlanco = conf > 0.5;
+
+            // 4. Aplicar Estilos
+            const div = document.getElementById("sitio");
+            div.style.background = hex;
+            div.style.color = textoBlanco ? "white" : "black";
+        }
+
+        // E. ARRANQUE DEL SISTEMA
+        window.addEventListener("DOMContentLoaded", () => {
+            const picker = document.getElementById("picker");
+
+            // Conecta el selector con la función
+            picker.addEventListener("input", actualizar);
+
+            // Ejecuta una vez al inicio
+            setTimeout(actualizar, 50);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1171 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJEMPLOS PYTHON_V02</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="ejemplos-de-programas-python">EJEMPLOS DE PROGRAMAS PYTHON</h1>
+<p>✅ <strong>1. Introducción – Hola mundo</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hola mundo"</span><span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>2. Input/Output – Saludar al usuario</strong></p>
+<pre class=" language-python"><code class="prism  language-python">nombre <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"¿Cómo te llamas? "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hola,"</span><span class="token punctuation">,</span> nombre<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>3. Comentarios</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Esto es un comentario</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Este programa tiene comentarios"</span><span class="token punctuation">)</span>  <span class="token comment"># Comentario al final</span>
+</code></pre>
+<p>✅ <strong>4. Operadores</strong></p>
+<pre class=" language-python"><code class="prism  language-python">a <span class="token operator">=</span> <span class="token number">5</span>
+b <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Suma:"</span><span class="token punctuation">,</span> a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Multiplicación:"</span><span class="token punctuation">,</span> a <span class="token operator">*</span> b<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Potencia:"</span><span class="token punctuation">,</span> a <span class="token operator">**</span> b<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>5. Variables y Asignación</strong></p>
+<pre class=" language-python"><code class="prism  language-python">x <span class="token operator">=</span> <span class="token number">10</span>
+y <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">5</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x vale:"</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"y vale:"</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>6. Python Types (tipos básicos)</strong></p>
+<pre class=" language-python"><code class="prism  language-python">entero <span class="token operator">=</span> <span class="token number">10</span>
+flotante <span class="token operator">=</span> <span class="token number">3.14</span>
+texto <span class="token operator">=</span> <span class="token string">"Hola"</span>
+booleano <span class="token operator">=</span> <span class="token boolean">True</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>entero<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">type</span><span class="token punctuation">(</span>flotante<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">type</span><span class="token punctuation">(</span>texto<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">type</span><span class="token punctuation">(</span>booleano<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>7. Indentación</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">if</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Esto está indentado"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Esto no"</span><span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>8. Loops y Condicionales</strong></p>
+<p><strong>if / elif / else</strong></p>
+<pre class=" language-python"><code class="prism  language-python">n <span class="token operator">=</span> <span class="token number">7</span>
+<span class="token keyword">if</span> n <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Es positivo"</span><span class="token punctuation">)</span>
+<span class="token keyword">elif</span> n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Es cero"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Es negativo"</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>while</strong></p>
+<pre class=" language-python"><code class="prism  language-python">contador <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">while</span> contador <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Contador:"</span><span class="token punctuation">,</span> contador<span class="token punctuation">)</span>
+    contador <span class="token operator">+=</span> <span class="token number">1</span>
+</code></pre>
+<p><strong>for</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">for</span> letra <span class="token keyword">in</span> <span class="token string">"abc"</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>letra<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>Tablas de multiplicar (cuadrado 1–9 con for anidados)</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Tabla de multiplicar del 1 al 9:\n"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> fila <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> col <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"{fila * col:3}"</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># salto de línea por cada fila</span>
+</code></pre>
+<p>✅ <strong>9. Files – Leer un archivo</strong></p>
+<p><em>(Asume que existe un archivo llamado <code>datos.txt</code>)</em></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"datos.txt"</span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    contenido <span class="token operator">=</span> f<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>contenido<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>10. Errors (Excepciones)</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Número: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Doble:"</span><span class="token punctuation">,</span> n <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span> ValueError<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Eso no es un número válido."</span><span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>11. Functions – Función simple</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">saludar</span><span class="token punctuation">(</span>nombre<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hola"</span><span class="token punctuation">,</span> nombre<span class="token punctuation">)</span>
+
+saludar<span class="token punctuation">(</span><span class="token string">"Ana"</span><span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>12. Classes – Clase mínima</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">class</span> <span class="token class-name">Persona</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nombre<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>nombre <span class="token operator">=</span> nombre
+    
+    <span class="token keyword">def</span> <span class="token function">saludar</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hola, soy"</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>nombre<span class="token punctuation">)</span>
+
+p <span class="token operator">=</span> Persona<span class="token punctuation">(</span><span class="token string">"Luis"</span><span class="token punctuation">)</span>
+p<span class="token punctuation">.</span>saludar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>13. Modules – Usar un módulo</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> math
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Raíz de 16:"</span><span class="token punctuation">,</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="✅adivinar-un-número-del-1-al-100.">✅<strong>Adivinar un número del 1 al 100</strong>.</h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> random
+
+numero_secreto <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
+intentos <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"¡Adivina el número del 1 al 100!"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    intento <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Introduce tu número: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    intentos <span class="token operator">+=</span> <span class="token number">1</span>
+
+    <span class="token keyword">if</span> intento <span class="token operator">&lt;</span> numero_secreto<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"El número secreto es MAYOR."</span><span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> intento <span class="token operator">&gt;</span> numero_secreto<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"El número secreto es MENOR."</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"¡Correcto! El número era {numero_secreto}."</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"Has acertado en {intentos} intentos."</span><span class="token punctuation">)</span>
+        <span class="token keyword">break</span>
+
+</code></pre>
+<h2 id="✅-programita-que-pida-notas-hasta-que-el-usurio-ponga-un-0-y-luego-calgcule-la-media">✅ Programita que pida notas hasta que el usurio ponga un 0, y luego calgcule la media</h2>
+<p>✅ <strong>1. Versión usando LISTA</strong></p>
+<pre class=" language-python"><code class="prism  language-python">notas <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Introduce notas (1 a 10). Usa 0 para terminar."</span><span class="token punctuation">)</span>
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Nota: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+    notas<span class="token punctuation">.</span>append<span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>notas<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"No se introdujeron notas."</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    media <span class="token operator">=</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>notas<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token builtin">len</span><span class="token punctuation">(</span>notas<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Notas introducidas:"</span><span class="token punctuation">,</span> notas<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Media:"</span><span class="token punctuation">,</span> media<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>2. Versión SIN lista (solo acumulando)</strong></p>
+<pre class=" language-python"><code class="prism  language-python">suma <span class="token operator">=</span> <span class="token number">0</span>
+contador <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Introduce notas (1 a 10). Usa 0 para terminar."</span><span class="token punctuation">)</span>
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Nota: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+    suma <span class="token operator">+=</span> n
+    contador <span class="token operator">+=</span> <span class="token number">1</span>
+
+<span class="token keyword">if</span> contador <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"No se introdujeron notas."</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    media <span class="token operator">=</span> suma <span class="token operator">/</span> contador
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Media:"</span><span class="token punctuation">,</span> media<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="✅programa-que-resuelve-una-ecuación-de-segundo-grado">✅Programa que resuelve una <strong>ecuación de segundo grado</strong></h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> math
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Resolver ax^2 + bx + c = 0"</span><span class="token punctuation">)</span>
+
+a <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"a = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"b = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"c = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Si a = 0 no es de segundo grado</span>
+<span class="token keyword">if</span> a <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"No es ecuación de segundo grado."</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    discriminante <span class="token operator">=</span> b<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">4</span><span class="token operator">*</span>a<span class="token operator">*</span>c
+
+    <span class="token keyword">if</span> discriminante <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        x1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">-</span>b <span class="token operator">+</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>discriminante<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span>
+        x2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">-</span>b <span class="token operator">-</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>discriminante<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Dos soluciones reales:"</span><span class="token punctuation">,</span> x1<span class="token punctuation">,</span> <span class="token string">"y"</span><span class="token punctuation">,</span> x2<span class="token punctuation">)</span>
+
+    <span class="token keyword">elif</span> discriminante <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        x <span class="token operator">=</span> <span class="token operator">-</span>b <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Una solución real (doble):"</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span>
+
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        real <span class="token operator">=</span> <span class="token operator">-</span>b <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span>
+        imag <span class="token operator">=</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span><span class="token operator">-</span>discriminante<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Dos soluciones complejas:"</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>real<span class="token punctuation">,</span> <span class="token string">"+"</span><span class="token punctuation">,</span> imag<span class="token punctuation">,</span> <span class="token string">"i"</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>real<span class="token punctuation">,</span> <span class="token string">"-"</span><span class="token punctuation">,</span> imag<span class="token punctuation">,</span> <span class="token string">"i"</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="✅-versión-2-—-usando-clases-oop">✅ <strong>VERSIÓN 2 — Usando CLASES (OOP)</strong></h2>
+<p>Aquí hacemos una clase llamada <code>EcuacionCuadratica</code> que incluye métodos para:</p>
+<ul>
+<li>calcular el discriminante,</li>
+<li>resolver la ecuación,</li>
+<li>mostrar soluciones.</li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> math
+
+<span class="token keyword">class</span> <span class="token class-name">EcuacionCuadratica</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>a <span class="token operator">=</span> a
+        self<span class="token punctuation">.</span>b <span class="token operator">=</span> b
+        self<span class="token punctuation">.</span>c <span class="token operator">=</span> c
+
+    <span class="token keyword">def</span> <span class="token function">discriminante</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>b<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">4</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token operator">*</span>self<span class="token punctuation">.</span>c
+
+    <span class="token keyword">def</span> <span class="token function">resolver</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>a <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token string">"No es una ecuación de segundo grado."</span>
+
+        d <span class="token operator">=</span> self<span class="token punctuation">.</span>discriminante<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> d <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            x1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">-</span>self<span class="token punctuation">.</span>b <span class="token operator">+</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+            x2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">-</span>self<span class="token punctuation">.</span>b <span class="token operator">-</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> f<span class="token string">"Dos soluciones reales: {x1} y {x2}"</span>
+
+        <span class="token keyword">elif</span> d <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            x <span class="token operator">=</span> <span class="token operator">-</span>self<span class="token punctuation">.</span>b <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> f<span class="token string">"Una solución real doble: {x}"</span>
+
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            real <span class="token operator">=</span> <span class="token operator">-</span>self<span class="token punctuation">.</span>b <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+            imag <span class="token operator">=</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span><span class="token operator">-</span>d<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span>f<span class="token string">"Soluciones complejas: "</span>
+                    f<span class="token string">"{real}+{imag}i y {real}-{imag}i"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Uso:</span>
+a <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"a = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"b = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"c = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+ecu <span class="token operator">=</span> EcuacionCuadratica<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ecu<span class="token punctuation">.</span>resolver<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="✅-versión-3-—-con-clases--matplotlib-gráfica-incluida">✅ <strong>VERSIÓN 3 — Con clases + matplotlib (gráfica incluida)</strong></h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> math
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+<span class="token keyword">class</span> <span class="token class-name">EcuacionCuadratica</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>a <span class="token operator">=</span> a
+        self<span class="token punctuation">.</span>b <span class="token operator">=</span> b
+        self<span class="token punctuation">.</span>c <span class="token operator">=</span> c
+
+    <span class="token keyword">def</span> <span class="token function">discriminante</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>b<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">4</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token operator">*</span>self<span class="token punctuation">.</span>c
+
+    <span class="token keyword">def</span> <span class="token function">soluciones</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>a <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>  <span class="token comment"># no es de segundo grado</span>
+
+        d <span class="token operator">=</span> self<span class="token punctuation">.</span>discriminante<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> d <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            x1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">-</span>self<span class="token punctuation">.</span>b <span class="token operator">+</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+            x2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">-</span>self<span class="token punctuation">.</span>b <span class="token operator">-</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span>
+
+        <span class="token keyword">elif</span> d <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            x <span class="token operator">=</span> <span class="token operator">-</span>self<span class="token punctuation">.</span>b <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>self<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># no hay soluciones reales</span>
+
+    <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>a<span class="token operator">*</span>x<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">+</span> self<span class="token punctuation">.</span>b<span class="token operator">*</span>x <span class="token operator">+</span> self<span class="token punctuation">.</span>c
+
+    <span class="token keyword">def</span> <span class="token function">graficar</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># Crear valores de x alrededor de las raíces o del vértice</span>
+        xs <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">)</span>
+        ys <span class="token operator">=</span> self<span class="token punctuation">.</span>f<span class="token punctuation">(</span>xs<span class="token punctuation">)</span>
+
+        plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xs<span class="token punctuation">,</span> ys<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">"Parábola"</span><span class="token punctuation">)</span>
+
+        <span class="token comment"># Eje X y Y</span>
+        plt<span class="token punctuation">.</span>axhline<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">)</span>
+        plt<span class="token punctuation">.</span>axvline<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">)</span>
+
+        <span class="token comment"># Calcular soluciones reales (si existen)</span>
+        soluciones <span class="token operator">=</span> self<span class="token punctuation">.</span>soluciones<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> soluciones <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"No es una ecuación de segundo grado"</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> <span class="token builtin">len</span><span class="token punctuation">(</span>soluciones<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"No hay soluciones reales"</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> x <span class="token keyword">in</span> soluciones<span class="token punctuation">:</span>
+                plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">)</span>
+                plt<span class="token punctuation">.</span>text<span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> f<span class="token string">"  x={x:.2f}"</span><span class="token punctuation">)</span>
+
+            plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"Parábola y puntos de corte con el eje X"</span><span class="token punctuation">)</span>
+
+        plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">"x"</span><span class="token punctuation">)</span>
+        plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">"f(x)"</span><span class="token punctuation">)</span>
+        plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+        plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># ---- Uso del programa ----</span>
+
+a <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"a = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"b = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"c = "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+ecu <span class="token operator">=</span> EcuacionCuadratica<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">)</span>
+
+sols <span class="token operator">=</span> ecu<span class="token punctuation">.</span>soluciones<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> sols <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Esto no es una ecuación de segundo grado."</span><span class="token punctuation">)</span>
+<span class="token keyword">elif</span> <span class="token builtin">len</span><span class="token punctuation">(</span>sols<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"No hay soluciones reales."</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Soluciones:"</span><span class="token punctuation">,</span> sols<span class="token punctuation">)</span>
+
+<span class="token comment"># Dibujar la parábola</span>
+ecu<span class="token punctuation">.</span>graficar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>✅ <strong>CLASE FRACCION COMPLETA</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">class</span> <span class="token class-name">Fraccion</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        Constructor flexible:
+        - Fraccion("a/b")
+        - Fraccion(0.25)
+        - Fraccion(a, b)
+        """</span>
+        <span class="token keyword">if</span> b <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                num<span class="token punctuation">,</span> den <span class="token operator">=</span> a<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span>
+                self<span class="token punctuation">.</span>num <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
+                self<span class="token punctuation">.</span>den <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>den<span class="token punctuation">)</span>
+
+            <span class="token keyword">elif</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token builtin">float</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                s <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+                <span class="token keyword">if</span> <span class="token string">"."</span> <span class="token keyword">in</span> s<span class="token punctuation">:</span>
+                    decimales <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    den <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">**</span> decimales
+                    num <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">round</span><span class="token punctuation">(</span>a <span class="token operator">*</span> den<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    num <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+                    den <span class="token operator">=</span> <span class="token number">1</span>
+                self<span class="token punctuation">.</span>num <span class="token operator">=</span> num
+                self<span class="token punctuation">.</span>den <span class="token operator">=</span> den
+
+            <span class="token keyword">elif</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token builtin">int</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>num <span class="token operator">=</span> a
+                self<span class="token punctuation">.</span>den <span class="token operator">=</span> <span class="token number">1</span>
+
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token keyword">raise</span> TypeError<span class="token punctuation">(</span><span class="token string">"Tipo no soportado"</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>num <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>den <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>den <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">raise</span> ZeroDivisionError<span class="token punctuation">(</span><span class="token string">"El denominador no puede ser 0"</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>simplificar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token comment"># MCD (Euclides) y simplificación</span>
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token keyword">def</span> <span class="token function">mcd</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">while</span> y <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            x<span class="token punctuation">,</span> y <span class="token operator">=</span> y<span class="token punctuation">,</span> x <span class="token operator">%</span> y
+        <span class="token keyword">return</span> <span class="token builtin">abs</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">simplificar</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        m <span class="token operator">=</span> self<span class="token punctuation">.</span>mcd<span class="token punctuation">(</span>self<span class="token punctuation">.</span>num<span class="token punctuation">,</span> self<span class="token punctuation">.</span>den<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>num <span class="token operator">//=</span> m
+        self<span class="token punctuation">.</span>den <span class="token operator">//=</span> m
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>den <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>num <span class="token operator">=</span> <span class="token operator">-</span>self<span class="token punctuation">.</span>num
+            self<span class="token punctuation">.</span>den <span class="token operator">=</span> <span class="token operator">-</span>self<span class="token punctuation">.</span>den
+
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token comment"># Conversión de tipos</span>
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token keyword">def</span> <span class="token function">__float__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>num <span class="token operator">/</span> self<span class="token punctuation">.</span>den
+
+    <span class="token keyword">def</span> <span class="token function">__int__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">int</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>num <span class="token operator">/</span> self<span class="token punctuation">.</span>den<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__complex__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">complex</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>num <span class="token operator">/</span> self<span class="token punctuation">.</span>den<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__index__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>den <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>num
+        <span class="token keyword">raise</span> TypeError<span class="token punctuation">(</span><span class="token string">"Solo se puede convertir a entero si la fracción es exacta (den=1)."</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token comment"># Representación</span>
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>den <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>num<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> f<span class="token string">"{self.num}/{self.den}"</span>
+
+    <span class="token keyword">def</span> <span class="token function">__repr__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> f<span class="token string">"Fraccion({self.num}, {self.den})"</span>
+
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token comment"># Aritmética básica</span>
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token keyword">def</span> <span class="token function">_convert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> Fraccion<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> value
+        <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__add__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        other <span class="token operator">=</span> self<span class="token punctuation">.</span>_convert<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        num <span class="token operator">=</span> self<span class="token punctuation">.</span>num <span class="token operator">*</span> other<span class="token punctuation">.</span>den <span class="token operator">+</span> other<span class="token punctuation">.</span>num <span class="token operator">*</span> self<span class="token punctuation">.</span>den
+        den <span class="token operator">=</span> self<span class="token punctuation">.</span>den <span class="token operator">*</span> other<span class="token punctuation">.</span>den
+        <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span>num<span class="token punctuation">,</span> den<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__sub__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        other <span class="token operator">=</span> self<span class="token punctuation">.</span>_convert<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        num <span class="token operator">=</span> self<span class="token punctuation">.</span>num <span class="token operator">*</span> other<span class="token punctuation">.</span>den <span class="token operator">-</span> other<span class="token punctuation">.</span>num <span class="token operator">*</span> self<span class="token punctuation">.</span>den
+        den <span class="token operator">=</span> self<span class="token punctuation">.</span>den <span class="token operator">*</span> other<span class="token punctuation">.</span>den
+        <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span>num<span class="token punctuation">,</span> den<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__mul__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        other <span class="token operator">=</span> self<span class="token punctuation">.</span>_convert<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        num <span class="token operator">=</span> self<span class="token punctuation">.</span>num <span class="token operator">*</span> other<span class="token punctuation">.</span>num
+        den <span class="token operator">=</span> self<span class="token punctuation">.</span>den <span class="token operator">*</span> other<span class="token punctuation">.</span>den
+        <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span>num<span class="token punctuation">,</span> den<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__truediv__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        other <span class="token operator">=</span> self<span class="token punctuation">.</span>_convert<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> other<span class="token punctuation">.</span>num <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">raise</span> ZeroDivisionError<span class="token punctuation">(</span><span class="token string">"No se puede dividir por 0"</span><span class="token punctuation">)</span>
+        num <span class="token operator">=</span> self<span class="token punctuation">.</span>num <span class="token operator">*</span> other<span class="token punctuation">.</span>den
+        den <span class="token operator">=</span> self<span class="token punctuation">.</span>den <span class="token operator">*</span> other<span class="token punctuation">.</span>num
+        <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span>num<span class="token punctuation">,</span> den<span class="token punctuation">)</span>
+
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token comment"># Operaciones adicionales</span>
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token keyword">def</span> <span class="token function">__pow__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token operator">not</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> <span class="token builtin">int</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">raise</span> TypeError<span class="token punctuation">(</span><span class="token string">"El exponente debe ser entero"</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> n <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span>self<span class="token punctuation">.</span>num <span class="token operator">**</span> n<span class="token punctuation">,</span> self<span class="token punctuation">.</span>den <span class="token operator">**</span> n<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span>self<span class="token punctuation">.</span>den <span class="token operator">**</span> <span class="token punctuation">(</span><span class="token operator">-</span>n<span class="token punctuation">)</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>num <span class="token operator">**</span> <span class="token punctuation">(</span><span class="token operator">-</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__floordiv__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        other <span class="token operator">=</span> self<span class="token punctuation">.</span>_convert<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        valor <span class="token operator">=</span> <span class="token punctuation">(</span>self<span class="token punctuation">.</span>num <span class="token operator">/</span> self<span class="token punctuation">.</span>den<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>other<span class="token punctuation">.</span>num <span class="token operator">/</span> other<span class="token punctuation">.</span>den<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token builtin">int</span><span class="token punctuation">(</span>valor<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__mod__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        other <span class="token operator">=</span> self<span class="token punctuation">.</span>_convert<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        q <span class="token operator">=</span> self<span class="token punctuation">.</span>__floordiv__<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        resto <span class="token operator">=</span> self <span class="token operator">-</span> <span class="token punctuation">(</span>other <span class="token operator">*</span> Fraccion<span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> resto
+
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token comment"># Comparaciones</span>
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token keyword">def</span> <span class="token function">__eq__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        other <span class="token operator">=</span> self<span class="token punctuation">.</span>_convert<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>num <span class="token operator">==</span> other<span class="token punctuation">.</span>num <span class="token operator">and</span> self<span class="token punctuation">.</span>den <span class="token operator">==</span> other<span class="token punctuation">.</span>den
+
+    <span class="token keyword">def</span> <span class="token function">__lt__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        other <span class="token operator">=</span> self<span class="token punctuation">.</span>_convert<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>num <span class="token operator">*</span> other<span class="token punctuation">.</span>den <span class="token operator">&lt;</span> other<span class="token punctuation">.</span>num <span class="token operator">*</span> self<span class="token punctuation">.</span>den
+
+    <span class="token keyword">def</span> <span class="token function">__le__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self <span class="token operator">==</span> other <span class="token operator">or</span> self <span class="token operator">&lt;</span> other
+
+    <span class="token keyword">def</span> <span class="token function">__gt__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">not</span> self<span class="token punctuation">.</span>__le__<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__ge__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">not</span> self<span class="token punctuation">.</span>__lt__<span class="token punctuation">(</span>other<span class="token punctuation">)</span>
+
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token comment"># Operadores unarios</span>
+    <span class="token comment"># ------------------------------------</span>
+    <span class="token keyword">def</span> <span class="token function">__neg__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span><span class="token operator">-</span>self<span class="token punctuation">.</span>num<span class="token punctuation">,</span> self<span class="token punctuation">.</span>den<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__pos__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span>self<span class="token punctuation">.</span>num<span class="token punctuation">,</span> self<span class="token punctuation">.</span>den<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__abs__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> Fraccion<span class="token punctuation">(</span><span class="token builtin">abs</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>num<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">abs</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>den<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__round__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> ndigits<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> ndigits <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token builtin">round</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>num <span class="token operator">/</span> self<span class="token punctuation">.</span>den<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token builtin">round</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>num <span class="token operator">/</span> self<span class="token punctuation">.</span>den<span class="token punctuation">,</span> ndigits<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"===== TEST DEL CONSTRUCTOR ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Fraccion('3/4')  → espera 3/4"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token string">"3/4"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nFraccion(0.5) → espera 1/2"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nFraccion(5) → espera 5"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nFraccion(6, 8) → espera 3/4 (simplificado)"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE SIMPLIFICADO AUTOMÁTICO ====="</span><span class="token punctuation">)</span>
+    f <span class="token operator">=</span> Fraccion<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Fraccion(50,100) → espera 1/2"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE CONVERSIONES ====="</span><span class="token punctuation">)</span>
+    f <span class="token operator">=</span> Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"float(3/4) → 0.75"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">float</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"int(3/4) → 0 (truncado)"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"complex(3/4) → (0.75+0j)"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">complex</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"index de Fraccion(5,1) → 5"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__index__<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE REPRESENTACIÓN ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Fraccion(3,1) debe mostrar '3'"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Fraccion(3,2) debe mostrar '3/2'"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE SUMA ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"1/2 + 1/3 → espera 5/6"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">+</span> Fraccion<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE RESTA ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"3/4 - 1/2 → espera 1/4"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">-</span> Fraccion<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE MULTIPLICACIÓN ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"2/3 * 3/4 → espera 1/2"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">*</span> Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE DIVISIÓN ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"2/3 / 3/4 → espera 8/9"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">/</span> Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE POTENCIAS ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"(2/3)^2 → espera 4/9"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"(2/3)^(-1) → espera 3/2"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE FLOOR DIV ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">" (7/3) // (2/3) → espera 3"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">//</span> Fraccion<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST MODULO ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"(7/3) % (2/3) → espera 1/3"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">%</span> Fraccion<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST DE COMPARACIONES ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"1/2 == 2/4 → True"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">==</span> Fraccion<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"3/4 &lt; 5/6 → True"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> Fraccion<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"3/4 &gt; 2/3 → True"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> Fraccion<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"3/4 &lt;= 9/12 → True"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> Fraccion<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TEST UNARIOS ====="</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"-(3/4) → espera -3/4"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token operator">-</span>Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"+(-3/4) → espera -3/4"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token operator">+</span>Fraccion<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"abs(-3/4) → espera 3/4"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">abs</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"round(3/4) → espera 1"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">round</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"round(1/3,2) → espera algo como 0.33"</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">round</span><span class="token punctuation">(</span>Fraccion<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n===== TODOS LOS TESTS EJECUTADOS ====="</span><span class="token punctuation">)</span>
+
+</code></pre>
+<h1 id="✅-list-comprehensions">✅ List comprehensions</h1>
+<h2 id="crear-una-lista-de-cuadrados">1. Crear una lista de cuadrados</h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Lista de cuadrados del 1 al 10</span>
+cuadrados <span class="token operator">=</span> <span class="token punctuation">[</span>x<span class="token operator">**</span><span class="token number">2</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>cuadrados<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ Útil: procesamiento rápido de números.</p>
+<h2 id="filtrar-números-pares">2. Filtrar números pares</h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Números pares del 1 al 20</span>
+pares <span class="token operator">=</span> <span class="token punctuation">[</span>x <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span> <span class="token keyword">if</span> x <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>pares<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ Útil: filtrado de datos según condición.</p>
+<h2 id="convertir-nombres-a-mayúsculas">3. Convertir nombres a mayúsculas</h2>
+<pre class=" language-python"><code class="prism  language-python">nombres <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"ana"</span><span class="token punctuation">,</span> <span class="token string">"juan"</span><span class="token punctuation">,</span> <span class="token string">"maria"</span><span class="token punctuation">]</span>
+nombres_mayus <span class="token operator">=</span> <span class="token punctuation">[</span>nombre<span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> nombre <span class="token keyword">in</span> nombres<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>nombres_mayus<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ Útil: normalizar datos de texto.</p>
+<h2 id="flatten-aplanar-una-lista-de-listas">4. Flatten (aplanar) una lista de listas</h2>
+<pre class=" language-python"><code class="prism  language-python">listas <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+aplano <span class="token operator">=</span> <span class="token punctuation">[</span>num <span class="token keyword">for</span> sublista <span class="token keyword">in</span> listas <span class="token keyword">for</span> num <span class="token keyword">in</span> sublista<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>aplano<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ Útil: procesamiento de matrices o tablas.</p>
+<h2 id="generar-pares-x-y">5. Generar pares <code>(x, y)</code></h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Pares (x, y) donde x y y están entre 1 y 3</span>
+pares <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">for</span> y <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>pares<span class="token punctuation">)</span>
+✅ Útil<span class="token punctuation">:</span> combinaciones<span class="token punctuation">,</span> pruebas<span class="token punctuation">,</span> o creación de tablas<span class="token punctuation">.</span>
+</code></pre>
+<h2 id="reemplazar-valores-según-condición">6. Reemplazar valores según condición</h2>
+<pre class=" language-python"><code class="prism  language-python">numeros <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+positivos <span class="token operator">=</span> <span class="token punctuation">[</span>num <span class="token keyword">if</span> num <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token number">0</span> <span class="token keyword">for</span> num <span class="token keyword">in</span> numeros<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>positivos<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ Útil: limpieza de datos o manejo de valores negativos.</p>
+<pre class=" language-python"><code class="prism  language-python">
+</code></pre>
+<h2 id="leer-un-archivo-y-procesar-líneas">7. Leer un archivo y procesar líneas</h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Suponiendo un archivo 'datos.txt' con una palabra por línea</span>
+palabras <span class="token operator">=</span> <span class="token punctuation">[</span>linea<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> linea <span class="token keyword">in</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"datos.txt"</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>palabras<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ Útil: procesamiento de archivos de texto.</p>
+<h2 id="aplicar-función-a-elementos">8. Aplicar función a elementos</h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Función para calcular factorial</span>
+<span class="token keyword">import</span> math
+numeros <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+factoriales <span class="token operator">=</span> <span class="token punctuation">[</span>math<span class="token punctuation">.</span>factorial<span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token keyword">for</span> n <span class="token keyword">in</span> numeros<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>factoriales<span class="token punctuation">)</span>
+</code></pre>
+<p>✅ Útil: aplicar operaciones matemáticas complejas.</p>
+<h1 id="mini-proyecto-práctico-usando-solo-list-comprehensions.">Mini proyecto práctico usando solo list comprehensions.</h1>
+<h2 id="datos-de-ejemplo">Datos de ejemplo</h2>
+<pre class=" language-python"><code class="prism  language-python">estudiantes <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span><span class="token string">"nombre"</span><span class="token punctuation">:</span> <span class="token string">"Ana"</span><span class="token punctuation">,</span> <span class="token string">"notas"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"edad"</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token string">"nombre"</span><span class="token punctuation">:</span> <span class="token string">"Juan"</span><span class="token punctuation">,</span> <span class="token string">"notas"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"edad"</span><span class="token punctuation">:</span> <span class="token number">22</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token string">"nombre"</span><span class="token punctuation">:</span> <span class="token string">"Maria"</span><span class="token punctuation">,</span> <span class="token string">"notas"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"edad"</span><span class="token punctuation">:</span> <span class="token number">19</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token string">"nombre"</span><span class="token punctuation">:</span> <span class="token string">"Luis"</span><span class="token punctuation">,</span> <span class="token string">"notas"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"edad"</span><span class="token punctuation">:</span> <span class="token number">21</span><span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre>
+<h2 id="nombres-de-todos-los-estudiantes">1. Nombres de todos los estudiantes</h2>
+<pre class=" language-python"><code class="prism  language-python">nombres <span class="token operator">=</span> <span class="token punctuation">[</span>est<span class="token punctuation">[</span><span class="token string">"nombre"</span><span class="token punctuation">]</span> <span class="token keyword">for</span> est <span class="token keyword">in</span> estudiantes<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>nombres<span class="token punctuation">)</span>
+<span class="token comment"># Resultado: ['Ana', 'Juan', 'Maria', 'Luis']</span>
+</code></pre>
+<h2 id="promedio-de-notas-de-cada-estudiante">2. Promedio de notas de cada estudiante</h2>
+<pre class=" language-python"><code class="prism  language-python">promedios <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">sum</span><span class="token punctuation">(</span>est<span class="token punctuation">[</span><span class="token string">"notas"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token builtin">len</span><span class="token punctuation">(</span>est<span class="token punctuation">[</span><span class="token string">"notas"</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">for</span> est <span class="token keyword">in</span> estudiantes<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>promedios<span class="token punctuation">)</span>
+<span class="token comment"># Resultado: [8.0, 6.0, 9.333..., 5.0]</span>
+</code></pre>
+<h2 id="estudiantes-aprobados-promedio--6">3. Estudiantes aprobados (promedio &gt;= 6)</h2>
+<pre class=" language-python"><code class="prism  language-python">aprobados <span class="token operator">=</span> <span class="token punctuation">[</span>est<span class="token punctuation">[</span><span class="token string">"nombre"</span><span class="token punctuation">]</span> <span class="token keyword">for</span> est <span class="token keyword">in</span> estudiantes <span class="token keyword">if</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>est<span class="token punctuation">[</span><span class="token string">"notas"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token builtin">len</span><span class="token punctuation">(</span>est<span class="token punctuation">[</span><span class="token string">"notas"</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">6</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>aprobados<span class="token punctuation">)</span>
+<span class="token comment"># Resultado: ['Ana', 'Juan', 'Maria']</span>
+</code></pre>
+<h2 id="estudiantes-con-todas-las-notas-mayores-a-5">4. Estudiantes con todas las notas mayores a 5</h2>
+<pre class=" language-python"><code class="prism  language-python">todos_mayores_5 <span class="token operator">=</span> <span class="token punctuation">[</span>est<span class="token punctuation">[</span><span class="token string">"nombre"</span><span class="token punctuation">]</span> <span class="token keyword">for</span> est <span class="token keyword">in</span> estudiantes <span class="token keyword">if</span> <span class="token builtin">all</span><span class="token punctuation">(</span>n <span class="token operator">&gt;</span> <span class="token number">5</span> <span class="token keyword">for</span> n <span class="token keyword">in</span> est<span class="token punctuation">[</span><span class="token string">"notas"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>todos_mayores_5<span class="token punctuation">)</span>
+<span class="token comment"># Resultado: ['Ana', 'Maria']</span>
+</code></pre>
+<h2 id="crear-mensajes-personalizados">5. Crear mensajes personalizados</h2>
+<pre class=" language-python"><code class="prism  language-python">mensajes <span class="token operator">=</span> <span class="token punctuation">[</span>f<span class="token string">"{est['nombre']} tiene un promedio de {sum(est['notas'])/len(est['notas']):.2f}"</span> <span class="token keyword">for</span> est <span class="token keyword">in</span> estudiantes<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>mensajes<span class="token punctuation">)</span>
+<span class="token comment"># Resultado: ['Ana tiene un promedio de 8.00', 'Juan tiene un promedio de 6.00', ...]</span>
+</code></pre>
+<h2 id="extraer-todas-las-notas-en-una-sola-lista">6. Extraer todas las notas en una sola lista</h2>
+<pre class=" language-python"><code class="prism  language-python">todas_notas <span class="token operator">=</span> <span class="token punctuation">[</span>nota <span class="token keyword">for</span> est <span class="token keyword">in</span> estudiantes <span class="token keyword">for</span> nota <span class="token keyword">in</span> est<span class="token punctuation">[</span><span class="token string">"notas"</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>todas_notas<span class="token punctuation">)</span>
+<span class="token comment"># Resultado: [7, 8, 9, 5, 6, 7, 9, 9, 10, 4, 5, 6]</span>
+</code></pre>
+<h2 id="edad-de-los-mayores-de-20-años">7.Edad de los mayores de 20 años</h2>
+<pre class=" language-python"><code class="prism  language-python">mayores_20 <span class="token operator">=</span> <span class="token punctuation">[</span>est<span class="token punctuation">[</span><span class="token string">"edad"</span><span class="token punctuation">]</span> <span class="token keyword">for</span> est <span class="token keyword">in</span> estudiantes <span class="token keyword">if</span> est<span class="token punctuation">[</span><span class="token string">"edad"</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token number">20</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>mayores_20<span class="token punctuation">)</span>
+<span class="token comment"># Resultado: [22, 21]</span>
+</code></pre>
+<h1 id="✅-operador-ternario">✅ Operador ternario</h1>
+<p>En Python, el <strong>operador ternario</strong> permite hacer una asignación o expresión condicional en <strong>una sola línea</strong>, usando la sintaxis:</p>
+<pre class=" language-python"><code class="prism  language-python">valor_si_verdadero <span class="token keyword">if</span> condición <span class="token keyword">else</span> valor_si_falso
+</code></pre>
+<h3 id="️⃣-verificar-si-un-número-es-par-o-impar">1️⃣ Verificar si un número es par o impar</h3>
+<pre class=" language-python"><code class="prism  language-python">numero <span class="token operator">=</span> <span class="token number">7</span>
+resultado <span class="token operator">=</span> <span class="token string">"Par"</span> <span class="token keyword">if</span> numero <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"Impar"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span>  <span class="token comment"># Imprime: Impar</span>
+</code></pre>
+<h3 id="️⃣-obtener-el-valor-absoluto-de-un-número">2️⃣ Obtener el valor absoluto de un número</h3>
+<pre class=" language-python"><code class="prism  language-python">n <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">10</span>
+absoluto <span class="token operator">=</span> n <span class="token keyword">if</span> n <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token operator">-</span>n
+<span class="token keyword">print</span><span class="token punctuation">(</span>absoluto<span class="token punctuation">)</span>  <span class="token comment"># Imprime: 10</span>
+</code></pre>
+<h3 id="️⃣-asignar-un-mensaje-según-la-edad">3️⃣ Asignar un mensaje según la edad</h3>
+<pre class=" language-python"><code class="prism  language-python">edad <span class="token operator">=</span> <span class="token number">18</span>
+mensaje <span class="token operator">=</span> <span class="token string">"Mayor de edad"</span> <span class="token keyword">if</span> edad <span class="token operator">&gt;=</span> <span class="token number">18</span> <span class="token keyword">else</span> <span class="token string">"Menor de edad"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>mensaje<span class="token punctuation">)</span>  <span class="token comment"># Imprime: Mayor de edad</span>
+</code></pre>
+<h3 id="️⃣-elegir-el-mayor-de-dos-números">4️⃣ Elegir el mayor de dos números</h3>
+<pre class=" language-python"><code class="prism  language-python">a <span class="token operator">=</span> <span class="token number">5</span>
+b <span class="token operator">=</span> <span class="token number">12</span>
+mayor <span class="token operator">=</span> a <span class="token keyword">if</span> a <span class="token operator">&gt;</span> b <span class="token keyword">else</span> b
+<span class="token keyword">print</span><span class="token punctuation">(</span>mayor<span class="token punctuation">)</span>  <span class="token comment"># Imprime: 12</span>
+</code></pre>
+<h3 id="️⃣-simplificar-un-if-else-dentro-de-una-función">5️⃣ Simplificar un <code>if-else</code> dentro de una función</h3>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">estado</span><span class="token punctuation">(</span>nota<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">"Aprobado"</span> <span class="token keyword">if</span> nota <span class="token operator">&gt;=</span> <span class="token number">60</span> <span class="token keyword">else</span> <span class="token string">"Reprobado"</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>estado<span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># Imprime: Aprobado</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>estado<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># Imprime: Reprobado</span>
+</code></pre>
+<h3 id="️⃣-modificar-elementos-de-una-lista-según-una-condición">1️⃣ Modificar elementos de una lista según una condición</h3>
+<p>Supongamos que queremos marcar los números pares como <code>"par"</code> y los impares como <code>"impar"</code>:</p>
+<pre class=" language-python"><code class="prism  language-python">numeros <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+etiquetas <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"par"</span> <span class="token keyword">if</span> n <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"impar"</span> <span class="token keyword">for</span> n <span class="token keyword">in</span> numeros<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>etiquetas<span class="token punctuation">)</span>  <span class="token comment"># Imprime: ['impar', 'par', 'impar', 'par', 'impar']</span>
+</code></pre>
+<h3 id="️⃣-asignar-valores-a-un-diccionario-según-condición">2️⃣ Asignar valores a un diccionario según condición</h3>
+<pre class=" language-python"><code class="prism  language-python">usuario <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"nombre"</span><span class="token punctuation">:</span> <span class="token string">"Ana"</span><span class="token punctuation">,</span> <span class="token string">"edad"</span><span class="token punctuation">:</span> <span class="token number">17</span><span class="token punctuation">}</span>
+usuario<span class="token punctuation">[</span><span class="token string">"estado"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"Mayor"</span> <span class="token keyword">if</span> usuario<span class="token punctuation">[</span><span class="token string">"edad"</span><span class="token punctuation">]</span> <span class="token operator">&gt;=</span> <span class="token number">18</span> <span class="token keyword">else</span> <span class="token string">"Menor"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>usuario<span class="token punctuation">)</span>  <span class="token comment"># Imprime: {'nombre': 'Ana', 'edad': 17, 'estado': 'Menor'}</span>
+</code></pre>
+<h3 id="️⃣-evitar-errores-al-dividir">3️⃣ Evitar errores al dividir</h3>
+<p>Si quieres dividir pero evitar división por cero:</p>
+<pre class=" language-python"><code class="prism  language-python">a <span class="token operator">=</span> <span class="token number">10</span>
+b <span class="token operator">=</span> <span class="token number">0</span>
+resultado <span class="token operator">=</span> a <span class="token operator">/</span> b <span class="token keyword">if</span> b <span class="token operator">!=</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"Indefinido"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span>  <span class="token comment"># Imprime: Indefinido</span>
+</code></pre>
+<h3 id="️⃣-formateo-de-strings-según-condición">4️⃣ Formateo de strings según condición</h3>
+<pre class=" language-python"><code class="prism  language-python">temperatura <span class="token operator">=</span> <span class="token number">30</span>
+mensaje <span class="token operator">=</span> f<span class="token string">"Hace calor"</span> <span class="token keyword">if</span> temperatura <span class="token operator">&gt;</span> <span class="token number">25</span> <span class="token keyword">else</span> f<span class="token string">"Hace frío"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>mensaje<span class="token punctuation">)</span>  <span class="token comment"># Imprime: Hace calor</span>
+</code></pre>
+<h3 id="️⃣-selección-rápida-en-listasdiccionarios">5️⃣ Selección rápida en listas/diccionarios</h3>
+<p>Supongamos que quieres escoger entre dos opciones según disponibilidad:</p>
+<pre class=" language-python"><code class="prism  language-python">opciones <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"cafe"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"te"</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">}</span>
+bebida <span class="token operator">=</span> <span class="token string">"cafe"</span> <span class="token keyword">if</span> opciones<span class="token punctuation">[</span><span class="token string">"cafe"</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"te"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>bebida<span class="token punctuation">)</span>  <span class="token comment"># Imprime: te</span>
+</code></pre>
+<h3 id="️⃣-formateo-de-strings-según-condición-1">9️⃣ Formateo de strings según condición</h3>
+<pre class=" language-python"><code class="prism  language-python">temperatura <span class="token operator">=</span> <span class="token number">18</span>
+mensaje <span class="token operator">=</span> f<span class="token string">"Hace calor"</span> <span class="token keyword">if</span> temperatura <span class="token operator">&gt;</span> <span class="token number">25</span> <span class="token keyword">else</span> f<span class="token string">"Hace frío"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>mensaje<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="🔟-función-simple-con-ternario">🔟 Función simple con ternario</h3>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">estado</span><span class="token punctuation">(</span>nota<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">"Aprobado"</span> <span class="token keyword">if</span> nota <span class="token operator">&gt;=</span> <span class="token number">60</span> <span class="token keyword">else</span> <span class="token string">"Reprobado"</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>estado<span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>estado<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="️⃣-ternario-anidado-para-rangos-de-edad">1️⃣ Ternario anidado para rangos de edad</h3>
+<pre class=" language-python"><code class="prism  language-python">edad <span class="token operator">=</span> <span class="token number">25</span>
+categoria <span class="token operator">=</span> <span class="token string">"Niño"</span> <span class="token keyword">if</span> edad <span class="token operator">&lt;</span> <span class="token number">13</span> <span class="token keyword">else</span> <span class="token string">"Adolescente"</span> <span class="token keyword">if</span> edad <span class="token operator">&lt;</span> <span class="token number">18</span> <span class="token keyword">else</span> <span class="token string">"Adulto"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>categoria<span class="token punctuation">)</span>  <span class="token comment"># Imprime: Adulto</span>
+</code></pre>
+<h3 id="️⃣-lista-con-ternarios-complejos">2️⃣ Lista con ternarios complejos</h3>
+<pre class=" language-python"><code class="prism  language-python">numeros <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+etiquetas <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Negativo"</span> <span class="token keyword">if</span> n <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"Cero"</span> <span class="token keyword">if</span> n <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"Positivo"</span> <span class="token keyword">for</span> n <span class="token keyword">in</span> numeros<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>etiquetas<span class="token punctuation">)</span>  <span class="token comment"># ['Negativo', 'Cero', 'Positivo', 'Negativo', 'Positivo']</span>
+</code></pre>
+<h3 id="️⃣-diccionario-con-asignación-condicional">3️⃣ Diccionario con asignación condicional</h3>
+<p>Asignar un estado según la puntuación y la asistencia:</p>
+<pre class=" language-python"><code class="prism  language-python">alumno <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"nota"</span><span class="token punctuation">:</span> <span class="token number">75</span><span class="token punctuation">,</span> <span class="token string">"asistencia"</span><span class="token punctuation">:</span> <span class="token number">80</span><span class="token punctuation">}</span>
+alumno<span class="token punctuation">[</span><span class="token string">"resultado"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"Aprobado con mérito"</span> <span class="token keyword">if</span> alumno<span class="token punctuation">[</span><span class="token string">"nota"</span><span class="token punctuation">]</span> <span class="token operator">&gt;=</span> <span class="token number">90</span> <span class="token keyword">else</span> <span class="token string">"Aprobado"</span> <span class="token keyword">if</span> alumno<span class="token punctuation">[</span><span class="token string">"nota"</span><span class="token punctuation">]</span> <span class="token operator">&gt;=</span> <span class="token number">60</span> <span class="token keyword">else</span> <span class="token string">"Reprobado"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>alumno<span class="token punctuation">)</span>  <span class="token comment"># {'nota': 75, 'asistencia': 80, 'resultado': 'Aprobado'}</span>
+</code></pre>
+<h3 id="️⃣-selección-de-valor-según-múltiples-condiciones">4️⃣ Selección de valor según múltiples condiciones</h3>
+<pre class=" language-python"><code class="prism  language-python">opciones <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"cafe"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"te"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"agua"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span>
+bebida <span class="token operator">=</span> <span class="token string">"cafe"</span> <span class="token keyword">if</span> opciones<span class="token punctuation">[</span><span class="token string">"cafe"</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"te"</span> <span class="token keyword">if</span> opciones<span class="token punctuation">[</span><span class="token string">"te"</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"agua"</span> <span class="token keyword">if</span> opciones<span class="token punctuation">[</span><span class="token string">"agua"</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">"Nada disponible"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>bebida<span class="token punctuation">)</span>  <span class="token comment"># Imprime: agua</span>
+</code></pre>
+<h3 id="️⃣-función-con-ternario-anidado">5️⃣ Función con ternario anidado</h3>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">clasificar</span><span class="token punctuation">(</span>nota<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">"Sobresaliente"</span> <span class="token keyword">if</span> nota <span class="token operator">&gt;=</span> <span class="token number">90</span> <span class="token keyword">else</span> <span class="token string">"Aprobado"</span> <span class="token keyword">if</span> nota <span class="token operator">&gt;=</span> <span class="token number">60</span> <span class="token keyword">else</span> <span class="token string">"Reprobado"</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>clasificar<span class="token punctuation">(</span><span class="token number">95</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># Sobresaliente</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>clasificar<span class="token punctuation">(</span><span class="token number">70</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># Aprobado</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>clasificar<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># Reprobado</span>
+</code></pre>
+<h3 id="️⃣-evitar-errores-y-asignar-default">6️⃣ Evitar errores y asignar default</h3>
+<pre class=" language-python"><code class="prism  language-python">datos <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"valor"</span><span class="token punctuation">:</span> <span class="token boolean">None</span><span class="token punctuation">}</span>
+resultado <span class="token operator">=</span> datos<span class="token punctuation">[</span><span class="token string">"valor"</span><span class="token punctuation">]</span> <span class="token keyword">if</span> datos<span class="token punctuation">[</span><span class="token string">"valor"</span><span class="token punctuation">]</span> <span class="token keyword">is</span> <span class="token operator">not</span> <span class="token boolean">None</span> <span class="token keyword">else</span> <span class="token number">0</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span>  <span class="token comment"># Imprime: 0</span>
+</code></pre>
+<h3 id="️⃣-operaciones-rápidas-en-listas"><strong>7️⃣ Operaciones rápidas en listas</strong></h3>
+<p>Sumar o restar según condición:</p>
+<pre class=" language-python"><code class="prism  language-python">numeros <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">]</span>
+resultado <span class="token operator">=</span> <span class="token punctuation">[</span>n<span class="token operator">*</span><span class="token number">2</span> <span class="token keyword">if</span> n <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> n<span class="token number">-1</span> <span class="token keyword">for</span> n <span class="token keyword">in</span> numeros<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resultado<span class="token punctuation">)</span>  <span class="token comment"># [10, -4, 4, -9]</span>
+</code></pre>
+<h3 id="️⃣-formateo-condicional-avanzado">8️⃣ Formateo condicional avanzado</h3>
+<pre class=" language-python"><code class="prism  language-python">temperaturas <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">]</span>
+mensajes <span class="token operator">=</span> <span class="token punctuation">[</span>f<span class="token string">"{t}°: Caliente"</span> <span class="token keyword">if</span> t <span class="token operator">&gt;</span> <span class="token number">25</span> <span class="token keyword">else</span> f<span class="token string">"{t}°: Agradable"</span> <span class="token keyword">if</span> t <span class="token operator">&gt;=</span> <span class="token number">15</span> <span class="token keyword">else</span> f<span class="token string">"{t}°: Frío"</span> <span class="token keyword">for</span> t <span class="token keyword">in</span> temperaturas<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>mensajes<span class="token punctuation">)</span>  <span class="token comment"># ['12°: Frío', '25°: Agradable', '30°: Caliente']</span>
+</code></pre>
+<h3 id="️⃣-selección-rápida-con-diccionarios-anidados">9️⃣ Selección rápida con diccionarios anidados</h3>
+<pre class=" language-python"><code class="prism  language-python">usuarios <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"Ana"</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token string">"Luis"</span><span class="token punctuation">:</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token string">"Marta"</span><span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">}</span>
+estado_usuarios <span class="token operator">=</span> <span class="token punctuation">{</span>u<span class="token punctuation">:</span> <span class="token string">"Mayor"</span> <span class="token keyword">if</span> e <span class="token operator">&gt;=</span> <span class="token number">18</span> <span class="token keyword">else</span> <span class="token string">"Menor"</span> <span class="token keyword">for</span> u<span class="token punctuation">,</span> e <span class="token keyword">in</span> usuarios<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>estado_usuarios<span class="token punctuation">)</span>  <span class="token comment"># {'Ana': 'Mayor', 'Luis': 'Menor', 'Marta': 'Mayor'}</span>
+</code></pre>
+<h3 id="🔟-ternario-dentro-de-f-string">🔟 Ternario dentro de f-string</h3>
+<pre class=" language-python"><code class="prism  language-python">puntuacion <span class="token operator">=</span> <span class="token number">85</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"Resultado: {'Aprobado' if puntuacion &gt;= 60 else 'Reprobado'}"</span><span class="token punctuation">)</span>
+</code></pre>
+<h1 id="tabla-principal-de-librerías-python">Tabla principal de librerías Python</h1>
+
+<table>
+<thead>
+<tr>
+<th align="left">Categoría</th>
+<th align="left">Librería</th>
+<th align="left">Descripción</th>
+<th align="left">Instalación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Ciencia de Datos</td>
+<td align="left"><code>pandas</code></td>
+<td align="left">Estructuras de datos y análisis</td>
+<td align="left"><code>pip install pandas</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>numpy</code></td>
+<td align="left">Arrays numéricos y matemática</td>
+<td align="left"><code>pip install numpy</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>scipy</code></td>
+<td align="left">Funciones científicas</td>
+<td align="left"><code>pip install scipy</code></td>
+</tr>
+<tr>
+<td align="left">Visualización</td>
+<td align="left"><code>matplotlib</code></td>
+<td align="left">Gráficos 2D/3D</td>
+<td align="left"><code>pip install matplotlib</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>seaborn</code></td>
+<td align="left">Gráficos estadísticos</td>
+<td align="left"><code>pip install seaborn</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>plotly</code></td>
+<td align="left">Gráficos interactivos</td>
+<td align="left"><code>pip install plotly</code></td>
+</tr>
+<tr>
+<td align="left">Machine Learning</td>
+<td align="left"><code>scikit-learn</code></td>
+<td align="left">Algoritmos de ML</td>
+<td align="left"><code>pip install scikit-learn</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>tensorflow</code></td>
+<td align="left">Redes neuronales (Google)</td>
+<td align="left"><code>pip install tensorflow</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>pytorch</code></td>
+<td align="left">Redes neuronales (Facebook)</td>
+<td align="left"><code>pip install torch</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>xgboost</code></td>
+<td align="left">Gradient boosting</td>
+<td align="left"><code>pip install xgboost</code></td>
+</tr>
+<tr>
+<td align="left">NLP</td>
+<td align="left"><code>nltk</code></td>
+<td align="left">Procesamiento de lenguaje</td>
+<td align="left"><code>pip install nltk</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>spacy</code></td>
+<td align="left">NLP industrial</td>
+<td align="left"><code>pip install spacy</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>transformers</code></td>
+<td align="left">Modelos de lenguaje</td>
+<td align="left"><code>pip install transformers</code></td>
+</tr>
+<tr>
+<td align="left">Desarrollo Web</td>
+<td align="left"><code>django</code></td>
+<td align="left">Framework completo</td>
+<td align="left"><code>pip install django</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>flask</code></td>
+<td align="left">Microframework</td>
+<td align="left"><code>pip install flask</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>fastapi</code></td>
+<td align="left">APIs rápidas</td>
+<td align="left"><code>pip install fastapi</code></td>
+</tr>
+<tr>
+<td align="left">Juegos</td>
+<td align="left"><code>pygame</code></td>
+<td align="left">Juegos 2D</td>
+<td align="left"><code>pip install pygame</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>arcade</code></td>
+<td align="left">Juegos 2D modernos</td>
+<td align="left"><code>pip install arcade</code></td>
+</tr>
+<tr>
+<td align="left">Automatización</td>
+<td align="left"><code>selenium</code></td>
+<td align="left">Automatización web</td>
+<td align="left"><code>pip install selenium</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>requests</code></td>
+<td align="left">Peticiones HTTP</td>
+<td align="left"><code>pip install requests</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>beautifulsoup4</code></td>
+<td align="left">Parseo HTML</td>
+<td align="left"><code>pip install beautifulsoup4</code></td>
+</tr>
+<tr>
+<td align="left">Excel</td>
+<td align="left"><code>openpyxl</code></td>
+<td align="left">Manipulación Excel .xlsx</td>
+<td align="left"><code>pip install openpyxl</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>xlrd</code></td>
+<td align="left">Lectura Excel .xls</td>
+<td align="left"><code>pip install xlrd</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>xlwt</code></td>
+<td align="left">Escritura Excel .xls</td>
+<td align="left"><code>pip install xlwt</code></td>
+</tr>
+<tr>
+<td align="left">Word</td>
+<td align="left"><code>python-docx</code></td>
+<td align="left">Manipulación Word</td>
+<td align="left"><code>pip install python-docx</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>docx2pdf</code></td>
+<td align="left">Conversión a PDF</td>
+<td align="left"><code>pip install docx2pdf</code></td>
+</tr>
+<tr>
+<td align="left">PDF</td>
+<td align="left"><code>pypdf2</code>/<code>pypdf4</code></td>
+<td align="left">Manipulación PDF</td>
+<td align="left"><code>pip install pypdf2</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>reportlab</code></td>
+<td align="left">Generación PDF</td>
+<td align="left"><code>pip install reportlab</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>pdfkit</code></td>
+<td align="left">HTML a PDF</td>
+<td align="left"><code>pip install pdfkit</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>fpdf</code></td>
+<td align="left">PDFs simples</td>
+<td align="left"><code>pip install fpdf</code></td>
+</tr>
+<tr>
+<td align="left">Correos</td>
+<td align="left"><code>yagmail</code></td>
+<td align="left">Envío simplificado</td>
+<td align="left"><code>pip install yagmail</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>smtplib</code></td>
+<td align="left">(Built-in) Protocolo SMTP</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>email</code></td>
+<td align="left">(Built-in) Construcción emails</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">Random</td>
+<td align="left"><code>random</code></td>
+<td align="left">(Built-in) Aleatoriedad</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>secrets</code></td>
+<td align="left">(Built-in) Tokens seguros</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">Hilos/Procesos</td>
+<td align="left"><code>threading</code></td>
+<td align="left">(Built-in) Hilos</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>multiprocessing</code></td>
+<td align="left">(Built-in) Procesos</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>asyncio</code></td>
+<td align="left">(Built-in) Asíncrono</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>concurrent.futures</code></td>
+<td align="left">(Built-in) Thread/Process pools</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>celery</code></td>
+<td align="left">Colas de tareas</td>
+<td align="left"><code>pip install celery</code></td>
+</tr>
+<tr>
+<td align="left">Sistema</td>
+<td align="left"><code>os</code></td>
+<td align="left">(Built-in) Sistema operativo</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>sys</code></td>
+<td align="left">(Built-in) Sistema Python</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>pathlib</code></td>
+<td align="left">(Built-in) Rutas</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>shutil</code></td>
+<td align="left">(Built-in) Operaciones archivos</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>psutil</code></td>
+<td align="left">Monitoreo sistema</td>
+<td align="left"><code>pip install psutil</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>platform</code></td>
+<td align="left">(Built-in) Info plataforma</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">Regex</td>
+<td align="left"><code>re</code></td>
+<td align="left">(Built-in) Expresiones regulares</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>regex</code></td>
+<td align="left">Regex mejorado</td>
+<td align="left"><code>pip install regex</code></td>
+</tr>
+<tr>
+<td align="left">Imágenes</td>
+<td align="left"><code>pillow</code></td>
+<td align="left">Procesamiento imágenes</td>
+<td align="left"><code>pip install pillow</code></td>
+</tr>
+<tr>
+<td align="left">Cálculo</td>
+<td align="left"><code>sympy</code></td>
+<td align="left">Matemática simbólica</td>
+<td align="left"><code>pip install sympy</code></td>
+</tr>
+<tr>
+<td align="left">Geolocalización</td>
+<td align="left"><code>geopandas</code></td>
+<td align="left">Datos geoespaciales</td>
+<td align="left"><code>pip install geopandas</code></td>
+</tr>
+</tbody>
+</table><h2 id="section"></h2>
+</div>
+</body>
+
+</html>
