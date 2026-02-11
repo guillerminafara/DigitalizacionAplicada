@@ -12,7 +12,7 @@ model = tf.keras.models.load_model('modelo_MINST_completo.keras')
 
 def preprocess_canvas(img):
     # INVERTIR COLORES
-    img? 255-img
+    img= 255-img
     #Binariza
     _, img= cv2.theshold(img, 50, 255, cv2.THRESH_BINARY)
 
