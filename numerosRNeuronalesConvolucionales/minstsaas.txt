@@ -1,0 +1,118 @@
+import tensorflow as tf
+import tensorflow_datasets as tfds
+import matplotlib.pyplot as plt
+import numpy as np
+import math
+import logging
+
+logger = tf.get_logger()
+logger.setLevel(logging.ERROR)
+
+print('TensorFlow versión:', tf.__version__)
+
+print('Cargando el dataset MNIST...')
+
+(ds_train, ds_test), ds_info = tfds.load(
+    'mnist',
+    split=['train', 'test'],
+    shuffle_files=True,
+    as_supervised=True,
+    with_info=True,
+)
+
+print('Dataset cargado exitosamente')
+
+def normalize(images, labels):
+    images = tf.cast(images, tf.float32)/255.0
+    images =tf.expand_dims(images, -1)
+    return images, labels
+
+train_dataset = ds_train.map(normalize, num_parallel_calls=tf.data.AUTOTUNE)
+test_dataset = ds_test.map(normalize, num_parallel_calls=tf.data.AUTOTUNE)
+
+print('Datos normalizados')
+
+print('Definiendo la estructura de la Red Neuronal...')
+
+model = tf.keras.Sequential([
+    tf.keras.layers.Input(shape=(28, 28, 1)),
+
+    tf.keras.layers.Conv2D(32, (3,3), activation='relu'),
+    tf.keras.layers.MaxPooling2D((2,2)),
+
+    tf.keras.layers.Conv2D(64, (3,3), activation='relu'),
+    tf.keras.layers.MaxPooling2D((2,2)),
+
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dropout(0.3),
+    tf.keras.layers.Dense(10, activation='softmax')
+])
+
+print('Modelo definido')
+model.summary()
+
+
+model.compile(
+    optimizer='adam',
+    loss='sparse_categorical_crossentropy',
+    metrics=['accuracy']
+)
+
+print('Modelo compilado')
+
+
+BATCHSIZE = 32
+
+train_dataset = train_dataset.cache()
+train_dataset = train_dataset.shuffle(ds_info.splits['train'].num_examples)
+train_dataset = train_dataset.batch(BATCHSIZE)
+train_dataset = train_dataset.prefetch(tf.data.AUTOTUNE)
+
+test_dataset = test_dataset.batch(BATCHSIZE)
+test_dataset = test_dataset.cache()
+test_dataset = test_dataset.prefetch(tf.data.AUTOTUNE)
+
+print('Datos preparados para entrenamiento')
+
+
+print('Comenzando el entrenamiento del modelo (5 épocas)...')
+
+history = model.fit(
+    train_dataset,
+    epochs=60,
+    validation_data=test_dataset,
+    verbose=1
+)
+
+print('Entrenamiento completado')
+
+
+print('Evaluando el modelo...')
+
+test_loss, test_accuracy = model.evaluate(
+    test_dataset,
+    verbose=1
+)
+
+print(f'Precisión en datos de prueba: {test_accuracy:.4f}')
+
+
+print('Guardando modelo compatible...')
+
+model.save('modelo_MINST_completo.keras')
+
+print('Modelo guardado como modelo_MINST_completo.keras')
+print('Modelo compatible generado exitosamente!')
+
+print('Probando el modelo guardado...')
+
+loaded_model = tf.keras.models.load_model('modelo_MINST_completo.keras')
+
+loaded_test_loss, loaded_test_accuracy = loaded_model.evaluate(
+    test_dataset,
+    verbose=1
+)
+
+print(f'Precisión del modelo cargado: {loaded_test_accuracy:.4f}')
+print('Modelo guardado y cargado correctamente!')
